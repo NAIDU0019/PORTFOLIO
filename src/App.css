@@ -1,0 +1,55 @@
+/* Center app content with max width */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Optional: Remove default text-align if using utility classes */
+body {
+  @apply text-white bg-black;
+}
+
+/* Logo Styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #a855f7aa); /* updated to match purple theme */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* React Spinning Logo Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Cards */
+.card {
+  padding: 2em;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Docs Text */
+.read-the-docs {
+  color: #aaa;
+  font-size: 0.9rem;
+}

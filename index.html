@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajappa Adabala | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Rajappa Adabala showcasing projects, skills, and achievements." />
+    <meta name="author" content="Rajappa Adabala" />
+    
+
+    <!-- Open Graph (for social sharing) -->
+    <meta property="og:title" content="Rajappa Adabala | Portfolio" />
+    <meta property="og:description" content="Explore Rajappa Adabala’s full-stack projects, cloud experience, and resume." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://yourdomain.com/opengraph-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rajappa_adabala" />
+    <meta name="twitter:image" content="https://yourdomain.com/opengraph-image.png" />
+    <script>
+  const canvas = document.createElement('canvas');
+  canvas.width = 64;
+  canvas.height = 64;
+  const ctx = canvas.getContext('2d');
+
+  // Draw circle background
+  ctx.fillStyle = '#FDE8F5';
+  ctx.beginPath();
+  ctx.arc(32, 32, 30, 0, 2 * Math.PI);
+  ctx.fill();
+
+  // Draw text "R"
+  ctx.fillStyle = '#804';
+  ctx.font = 'bold 34px Cardo';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('R', 32, 34);
+
+  // Set favicon
+  const link = document.createElement('link');
+  link.rel = 'icon';
+  link.type = 'image/png';
+  link.href = canvas.toDataURL('image/png');
+
+  document.head.appendChild(link);
+</script>
+
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
